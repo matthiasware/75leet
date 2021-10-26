@@ -23,8 +23,28 @@ Memory O(1)
 
 ### 152. Maximum Product Subarray
 Dynmic Programming
+maintain values of current max and current min of product and check if cur_max is larger than global max
 Zero will split array into subarrays
-maintain values of current max and current min of product
 
 Time O(n)
 Memory O(1)
+
+
+### 153. Find Minimum in Rotated Sorted Array
+binary search with left and right pointer. split array and search either left or right portion of array
+
+Time O(logn)
+Memory O(1)
+
+### 33. Search in Rotated Sorted Array
+discret cases! binary search where we check if right or left subarray is sorted. for the sorted array, we determine if the element is inside, if not it must be in the other subarray not not there!
+
+Time O(logn)
+Memory O(1)
+
+
+### 15. 3Sum
+Work with sorted array to eliminate duplicates. Fix one of the three values and the rest reduces to "Two Sum"
+
+Time: O(nlogn) + O(n**2) -> O(n**2)
+Space: Depend on use of hashmap or pointer and sorting! O(n)
