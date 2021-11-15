@@ -48,3 +48,42 @@ Work with sorted array to eliminate duplicates. Fix one of the three values and 
 
 Time: O(nlogn) + O(n**2) -> O(n**2)
 Space: Depend on use of hashmap or pointer and sorting! O(n)
+
+### 11. Container With Most Water
+pointer left and right, update left if height[l] < height[r] and vice versa
+
+Time: O(n)
+Memory: O(1)
+
+### 191. Number of 1 Bits
+Smart: n AND (n-1)
+Time O(1)
+Memory O(n)
+
+### 338. Counting Bits
+number of bits are the same as previous number of bits + 1 when going in 2**n steps
+Time: O(n)
+Memory: O(n)
+
+### 268. Missing Number
+(n XOR n) = 0, (n XOR j XOR n XOR j) = 0 -> xor is invariant to permutations!
+Time: O(n)
+Memory: O(1)
+
+### 190. Reverse Bits
+Usinf Logic AND, OR and shifting ;)
+Time O(1)
+Mem O(1)
+
+### 70. Climbing Stairs
+Option 1)
+Decision Tree with choice 1 or 2 steps. recursive search with map to prevent multiple calculations.
+Draw tree to see how many choices are duplicate
+Binary Tree of hight n -> 2^2 Timecomplexity which is really bad!
+Memory O(n)
+Time O(n)
+
+Option 2)
+Bottom Up Calculation with O(1) extra memory! (See Fibonacci)
+Time O(n)
+Memory O(1)
